@@ -29,11 +29,11 @@ namespace PerLink.Controllers
             //Verifica se o número é Sortudo
             if (VerificaSeESortudo(Int32.Parse(numero)))
             {
-                ViewBag.Resposta = ViewBag.Resposta + " Sortudo";
+                ViewBag.Resposta = ViewBag.Resposta + " Número Sortudo";
             }
             else
             {
-                ViewBag.Resposta = ViewBag.Resposta + " Não-Sortudo";
+                ViewBag.Resposta = ViewBag.Resposta + " Número Não-Sortudo";
             }
 
             //Verifica se o número é Feliz

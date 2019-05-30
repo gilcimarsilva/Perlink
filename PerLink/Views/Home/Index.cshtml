@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Teste Gilcimar Silva";
+}
+
+@using (Html.BeginForm("Verificar", "Home", FormMethod.Post))
+{
+    <div style="margin-top:50px;">
+        <label for="Numero">Número:</label>
+        <input type="text" name="numero" value="" onkeypress="return event.charCode >= 48 && event.charCode <= 57"/>
+        <input type="submit" value="Verificar" class="submit" />
+    </div>
+    <div style="margin-top:50px;font-family:Verdana;color:red;font-size:11px">
+        @ViewBag.Resposta
+    </div>
+}
+
+
